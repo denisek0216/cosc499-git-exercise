@@ -5,7 +5,8 @@ public class SortArray {
 
     // Method 1: Sorting integers
     public static int[] sortIntegers(int[] intArr) {
-
+        Arrays.sort(intArr);
+        return intArr;
     }
     
     // Method 2: Sorting strings
