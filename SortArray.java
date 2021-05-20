@@ -1,5 +1,4 @@
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,13 +10,13 @@ public class SortArray {
     // INSERTING A RANDOM COMMENT
 
     // Method 1: Sorting integers
-    public static int[] sortIntegers(int[] intArr) {
+    private static int[] sortIntegers(int[] intArr) {
         Arrays.sort(intArr);
         return intArr;
     }
     
     // Method 2: Sorting strings
-    public static String[] sortStrings(String[] strArr) {
+    private static String[] sortStrings(String[] strArr) {
         Arrays.sort(strArr);
         return strArr;
     }
@@ -55,11 +54,10 @@ public class SortArray {
         }
         input.close();
     }
-
+    
     @Test
     public void testSortStrings() {
         String[] expectedOutput = {"apple","banana","cat","dog","gnome","zeppelin"};
-        String[] testOutput = sortStrings({"dog","zeppelin","cat","gnome","banana","apple"});
-        assertArrayEquals(expectedOutput, testOutput);
+        assertArrayEquals(expectedOutput, sortStrings(new String[] {"dog","zeppelin","cat","gnome","banana","apple"}));
     }
 }
