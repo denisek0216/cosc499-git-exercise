@@ -2,12 +2,13 @@
 
 ## About
 
-What this program does
+This is a simple (kinda sucky) program that sorts an array.
 
-## Feature-1
+## Sorting Integers
 
-Description
+Accepts an array of integers and sorts them in ascending order
 
-## Feature-2
+## Sorting Strings
 
-Description
+Accepts an array of strings and sorts them in ascending order
+
