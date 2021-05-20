@@ -8,8 +8,8 @@ import org.junit.Test;
 
 public class SortArray {
 
-    // INSERTING SOME RANDOM COMMENT
-
+    // INSERTING A RANDOM COMMENT
+    
     // Method 1: Sorting integers
     public static int[] sortIntegers(int[] intArr) {
         Arrays.sort(intArr);
