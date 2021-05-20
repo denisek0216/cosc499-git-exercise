@@ -25,8 +25,6 @@ public class SortArray {
         while (option!=1 && option!=2) {
             if (option==1) {
                 int[] intArr = new int[length];
-                
-                // TODO: Check if array consists of only ints
 
                 for (int i=0; i<length; i++) {
                     System.out.println("Enter element-"+i+" value: ");
@@ -53,5 +51,6 @@ public class SortArray {
                 System.out.println("Invalid option choice. Enter only either 1 or 2.");
             }
         }
+        input.close();
     }
 }
